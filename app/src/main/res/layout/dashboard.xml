@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/tv_my_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_my_wallet"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/tv_my_ref"
+        android:text="My Wallet"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_my_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_my_ref"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="8dp"
+        android:text="My Ref"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_withdrawals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_withdrawals"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:layout_toRightOf="@id/tv_investments"
+        android:text="Withdrawals"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_investments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_investments"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/tv_my_account"
+        android:text="Investments"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_my_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_my_account"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/tv_withdraw"
+        android:text="My Account"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_withdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_withdraw"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="8dp"
+        android:text="Withdraw"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_settings"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="18dp"
+        android:layout_toRightOf="@id/tv_messages"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_messages"
+        app:layout_constraintTop_toBottomOf="@+id/iv_settings" />
+
+    <TextView
+        android:id="@+id/tv_ref_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_ref_wallet"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toRightOf="@id/tv_settings"
+        android:text="Ref Wallet"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_invest"
+        android:layout_width="70dp"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_invest"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/tv_messages"
+        android:text="Invest"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_alignBaseline="@id/iv_messages"
+        android:id="@+id/tv_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_messages"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_invest"
+        android:text="Messages"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_my_wallet"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:background="#17FFFFFF"
+        android:foreground="@drawable/button_border_white"
+        android:padding="12dp"
+        android:tint="@color/white"
+        android:layout_below="@id/iv_my_account"
+        android:layout_toRightOf="@id/iv_my_ref"
+        app:srcCompat="@drawable/ic_wallet" />
+
+    <ImageView
+        android:id="@+id/iv_withdraw"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/button_border_white"
+        android:backgroundTint="#17FFFFFF"
+        android:foreground="@drawable/button_border_white"
+        android:padding="12dp"
+        android:tint="@color/white"
+        android:layout_below="@id/iv_invest"
+        app:srcCompat="@drawable/ic_atm" />
+
+    <ImageView
+        android:id="@+id/iv_my_account"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/button_border_white"
+        android:backgroundTint="#17FFFFFF"
+        android:foreground="@drawable/button_border_white"
+        android:padding="12dp"
+        android:tint="@color/white"
+        android:layout_toRightOf="@id/iv_withdraw"
+        android:layout_below="@id/iv_messages"
+        app:srcCompat="@drawable/ic_person_black_24dp" />
+
+    <ImageView
+        android:id="@+id/iv_withdrawals"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/iv_ref_wallet"
+        android:layout_marginTop="96dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/iv_investments"
+        android:background="@drawable/button_border_white"
+        android:backgroundTint="#17FFFFFF"
+        android:foreground="@drawable/button_border_white"
+        android:padding="12dp"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/ic_atm" />
+
+    <ImageView
+        android:id="@+id/iv_ref_wallet"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="#17FFFFFF"
+        android:foreground="@drawable/button_border_white"
+        android:padding="12dp"
+        android:tint="@color/white"
+        android:layout_toRightOf="@id/iv_settings"
+        app:srcCompat="@drawable/ic_wallet" />
+
+    <ImageView
+        android:id="@+id/iv_messages"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:background="#17FFFFFF"
+        android:foreground="@drawable/button_border_white"
+        android:padding="12dp"
+        android:tint="@color/white"
+        android:layout_toRightOf="@id/iv_invest"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <ImageView
+        android:id="@+id/iv_invest"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:background="#17FFFFFF"
+        android:foreground="@drawable/button_border_white"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_savings" />
+
+    <ImageView
+        android:id="@+id/iv_settings"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:background="#17FFFFFF"
+        android:foreground="@drawable/button_border_white"
+        android:padding="12dp"
+        android:tint="@color/white"
+        android:layout_toRightOf="@id/iv_messages"
+        app:srcCompat="@drawable/ic_settings_black_24dp" />
+
+    <ImageView
+        android:id="@+id/iv_investments"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/button_border_white"
+        android:backgroundTint="#17FFFFFF"
+        android:foreground="@drawable/button_border_white"
+        android:padding="12dp"
+        android:tint="@color/white"
+        android:layout_below="@id/iv_settings"
+        android:layout_toRightOf="@id/iv_my_account"
+        app:srcCompat="@drawable/ic_investment" />
+
+    <ImageView
+        android:id="@+id/iv_my_ref"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/iv_withdraw"
+        android:layout_marginTop="96dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/iv_withdraw"
+        android:background="@drawable/button_border_white"
+        android:backgroundTint="#17FFFFFF"
+        android:foreground="@drawable/button_border_white"
+        android:padding="12dp"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/ic_people_black_24dp" />
+
+</RelativeLayout>
